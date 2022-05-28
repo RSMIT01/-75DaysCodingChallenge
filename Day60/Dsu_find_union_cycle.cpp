@@ -13,7 +13,7 @@ void union_op(int from,int to,vector<int> &parent)
 {
         int fromp=find_parent(from,parent);
          int top=find_parent(to,parent);
-         parent[from]=to;
+         parent[fromp]=top;
 }
 
 bool iscycle(vector<pair<int,int>>edges,vector<int>&parent)
